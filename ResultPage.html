@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T/F Test 결과보기</title>
+    <link href="ResultPage.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="display-title">
+            <a href="https://ozcodingschool.com/">
+                <img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F00feaf78-d356-41ee-90f9-616e7f73fd77%2Ffcd0ea25-917c-400c-9443-839fd0de2a2f%2Foz_icon_(2).png?table=block&id=f5504ba9-b741-4d2e-9af6-ded3fb094d5a&spaceId=00feaf78-d356-41ee-90f9-616e7f73fd77&width=250&userId=097f1c2c-691c-41b5-a12c-237bdfda8a3b&cache=v2"
+                    id="oz-logo">
+            </a>
+            <h1>T/F 테스트 결과</h1>
+        </div>
+        <div class="result-display">
+            <p id="nickname">"나는야 현실적인 공감러"</p>
+            <div class="TFpercentage">
+                <div>
+                    <span id="F-word">F</span>
+                    <progress max="100" value="35" class="progress-bar" id="F-progressBar"></progress>
+                    <span id="F-score">35</span>
+                </div>
+                <div>
+                    <span id="T-word">T</span>
+                    <progress max="100" value="65" class="progress-bar" id="T-progressBar"></progress>
+                    <span id="T-score">65</span>
+                </div>
+            </div>
+            <div class="result-image">
+                <img src="./images/test.jpg" alt="결과 캐릭터 이미지">
+            </div>
+        </div>
+        <div class="Btns">
+            <div class="share-Btn">
+                <button class="Btn" id="result-share">테스트 결과 공유</button>
+                <div id="modal">
+                    <div class="modal-content">
+                        <button id="close-modal">X</button>
+                        <div class="share-Btns">
+                            <button id="kakao-shareBtn">카카오톡 공유하기</button>
+                            <button id="link-copyBtn">링크 복사하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="retry-Btn">
+                <button class="Btn" id="retry">다시하기</button>
+            </div>
+        </div>
+        <div class="ps">
+            <div>본 페이지는 <b>오즈 코딩스쿨 웹 개발 초격차 캠프 프론트 2기</b><br> 박세미, 정재호, 최은진이 개발했습니다.</div>
+        </div>
+    </div>
+    <script src="ResultPage.js"></script>
+</body>
+
+</html>
