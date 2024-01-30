@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+body{    
+height: 100vh;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+}
+#container{
+/* 변경: 화면 너비에 따라 조절 */
+    max-width: 600px; /* 변경: 최대 폭 설정 */
+    height: 100%;
+    display: grid;
+    /*flex-direction: column;*/
+    margin: 0 auto;
+    text-align: center;
+    padding: 0; /* 변경: 좀 더 작은 여백 */
+
+}
+
+header{
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+.logo{
+    justify-content: space-between;
+    padding: 0 10px;
+}
+#millennium{
+    color: rgb(255, 15, 95);
+    font-size: 20px;
+    letter-spacing: -1.9px;
+    font-weight: 700;
+}
+#dragon{
+    color: rgb(0, 140, 255);
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+#ozLogo{
+    text-decoration-line: none;
+    color: black;
+    font-weight: 700;
+}
+#mainImg{
+    width: 90%;
+    padding: 30px 0 10px 0;
+}
+.text{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 15px;
+}
+.testBtnBox{
+    flex-direction: column;
+    height: 150px;
+}
+.testBtn{
+    width: 90%;
+    height: 40%;
+    border-radius: 15px;
+    margin: 6px 0;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(233, 244, 253);
+}
+.testBtn:hover{
+    background-color: rgb(252, 161, 191);
+    font-size: 22px;
+}
+.shareBtnBox{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    justify-content: center;
+}
+#share{
+    width: 69px;
+    height: 69px;
+    margin-left: 5px;
+    border-radius: 15px;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+    border-radius: none;
+    align-items: center;
+    padding: 0
+}
+#shareIcon{
+    width:45px;
+    align-items: center;
+}
