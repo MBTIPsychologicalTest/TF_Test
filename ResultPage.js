@@ -29,15 +29,15 @@ function get_Result() {
   t_Progress_Score.textContent = tScoreValue;
 
   if (fScoreValue <= 20) {
-    nickname.textContent = "너 T발 C야?";
+    nickname.textContent = '"너 T발 C야?"';
   } else if ((fScoreValue > 20) & (fScoreValue <= 40)) {
-    nickname.textContent = "겉.바.속.촉";
+    nickname.textContent = '"겉.바.속.촉"';
   } else if ((fScoreValue > 40) & (fScoreValue <= 60)) {
-    nickname.textContent = "후라이드반 양념반";
+    nickname.textContent = '"후라이드반 양념반"';
   } else if ((fScoreValue > 60) & (fScoreValue <= 80)) {
-    nickname.textContent = "따뜻한 아이스아메리카노";
+    nickname.textContent = '"따뜻한 아이스아메리카노"';
   } else {
-    nickname.textContent = "공감 대마왕";
+    nickname.textContent = '"공감 대마왕"';
   }
 }
 
