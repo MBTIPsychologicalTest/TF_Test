@@ -280,6 +280,7 @@ typeBothButton.addEventListener("click", function () {
 typeTButton.addEventListener("click", function () {
   goNextPage(typeTButton.id);
 });
+
 // 결과
 function resultDisplay() {
   var encodedValue = encodeURIComponent(f_Score);
