@@ -38,6 +38,15 @@ div#progress-container {
     margin-bottom: 30px;
 }
 
+#progressText{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px; 
+    color: black; 
+}
+
 p.introduce {
     margin-bottom: 0;
 }
