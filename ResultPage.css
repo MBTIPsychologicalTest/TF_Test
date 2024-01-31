@@ -189,16 +189,19 @@ progress::-webkit-progress-bar {
 .share-Btns > button {
     width: 350px;
     height: 50px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
     font-size: 1rem;
     font-weight: 800;
 }
 
+.share-Btns > button:hover {
+    font-size: 18px;
+}
+
 .modal-content button:hover{
     cursor: pointer;
 }
-
 
 .ps{
     height: 5rem;
