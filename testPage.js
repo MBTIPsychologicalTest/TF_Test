@@ -274,7 +274,7 @@ typeTButton.addEventListener("click", function () {
   goNextPage(typeTButton.id);
 });
 
-// 임시 결과 화면
+// 결과
 function resultDisplay() {
   var encodedValue = encodeURIComponent(f_Score);
   window.location.href = "ResultPage.html?value=" + encodedValue;

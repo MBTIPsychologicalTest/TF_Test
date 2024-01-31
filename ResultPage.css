@@ -33,10 +33,30 @@ body {
     border-bottom: 1.5px solid #D8D8D8;
 }
 
-.display-title > a{
+.display-title > p{
     position: absolute;
     top: 20%;
     left: 0px;    
+}
+
+.millennium{
+    color: rgb(255, 15, 95);
+    font-size: 20px;
+    letter-spacing: -1.9px;
+    font-weight: 700;
+}
+
+.dragon{
+    color: rgb(0, 140, 255);
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.display-title > a{
+    position: absolute;
+    top: 20%;
+    right: 0px;    
 }
 
 #oz-logo{
@@ -80,7 +100,6 @@ progress {
     height: 1rem;
     appearance: none;
     margin: 0 0.5rem;
-
 }
 
 progress::-webkit-progress-bar {
