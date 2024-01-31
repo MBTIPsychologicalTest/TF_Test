@@ -277,5 +277,5 @@ typeTButton.addEventListener("click", function () {
 // 결과
 function resultDisplay() {
   var encodedValue = encodeURIComponent(f_Score);
-  window.location.href = "ResultPage.html?value=" + encodedValue;
+  window.location.href = "resultPage.html?value=" + encodedValue;
 }

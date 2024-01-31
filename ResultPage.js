@@ -1,4 +1,5 @@
 const nickname = document.getElementById("nickname");
+const resultImg = document.getElementById("resultImg");
 
 const result_shareBtn = document.getElementById("result-share");
 const closeBtn = document.getElementById("close-modal");
@@ -29,7 +30,8 @@ function get_Result() {
   t_Progress_Score.textContent = tScoreValue;
 
   if (fScoreValue <= 20) {
-    nickname.textContent = '"너 T발 C야?"';
+    // nickname.textContent = '"너 T발 C야?"';
+    resultImg.src = "./images/T_img.jpeg";
   } else if ((fScoreValue > 20) & (fScoreValue <= 40)) {
     nickname.textContent = '"겉.바.속.촉"';
   } else if ((fScoreValue > 40) & (fScoreValue <= 60)) {
@@ -52,5 +54,5 @@ closeBtn.addEventListener("click", () => {
 });
 
 retryBtn.addEventListener("click", () => {
-  window.location.href = "index.html";
+  window.location.href = "startPage.html";
 });
