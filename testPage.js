@@ -243,23 +243,30 @@ function goPage10() {
   typeTButton.innerText = "로봇 주제에 시키는대로 행동해야지 토를달아?";
 }
 
-// 다음 페이지 프로그레스바 진행상황과 현재 문항 수 바뀌도록
-function changeProgressBar(questionIndex) {
-  const questionCount = document.getElementById("questionCount");
+// 다음 페이지 프로그레스바 진행상황과 현재 문항 수 바뀌도록하는 함수
+function changeProgressBar(questionIndex){
+  const questionCount = document.getElementById('questionCount');
   questionCount.innerHTML = `${questionIndex} / 10`; // 현재 문항 수 표시
+  const progressText = document.getElementById('progressText');
 
+  let currentText = parseInt(progressText.innerText);
   let currentValue = parseInt(progressBar.value);
-  currentValue += 10;
-  progressBar.value = currentValue;
+  
+  newValue = currentValue += 10;
+  newText = currentText + 10;
+  
+  progressBar.value = newValue;
+  progressText.innerText = newText + '%';
+
   if (currentValue <= 30) {
-    progressBar.classList.remove("orange-color", "green-color");
-    progressBar.classList.add("red-color");
+      progressBar.classList.remove('orange-color', 'green-color');
+      progressBar.classList.add('red-color');
   } else if (currentValue <= 70) {
-    progressBar.classList.remove("red-color", "green-color");
-    progressBar.classList.add("orange-color");
+      progressBar.classList.remove('red-color', 'green-color');
+      progressBar.classList.add('orange-color');
   } else {
-    progressBar.classList.remove("red-color", "orange-color");
-    progressBar.classList.add("green-color");
+      progressBar.classList.remove('red-color', 'orange-color');
+      progressBar.classList.add('green-color');
   }
 }
 
@@ -273,7 +280,6 @@ typeBothButton.addEventListener("click", function () {
 typeTButton.addEventListener("click", function () {
   goNextPage(typeTButton.id);
 });
-
 // 결과
 function resultDisplay() {
   var encodedValue = encodeURIComponent(f_Score);
