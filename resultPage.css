@@ -33,7 +33,7 @@ body {
     border-bottom: 1.5px solid #D8D8D8;
 }
 
-.display-title > p{
+.display-title > p {
     position: absolute;
     top: 20%;
     left: 0px;    
@@ -62,10 +62,6 @@ body {
 #oz-logo{
     height: 3rem;
     width: 3rem;
-}
-
-.display-title > h1{
-    margin: 19px 0;
 }
 
 .result-display{
@@ -114,14 +110,33 @@ progress::-webkit-progress-bar {
 
 #T-progressBar::-webkit-progress-value {
     /* progress의 진행 bar가 되는 요소 */
-    
     background-color: #F78181;
 }
 
+.score{
+    width: 90px;
+}
+
 .result-image > img{
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
     border-radius: 5px;
+}
+
+.content-display{
+    width: 90%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #FBF2EF;
+    margin-bottom: 1rem;
+}
+
+#content-explanation{
+    font-size: 1.5rem;
 }
 
 .Btns{
@@ -207,7 +222,7 @@ progress::-webkit-progress-bar {
 
 .share-Btns > button {
     width: 350px;
-    height: 50px;
+    height: 70px;
     margin-bottom: 1rem;
     border-radius: 10px;
     font-size: 1rem;
@@ -215,7 +230,7 @@ progress::-webkit-progress-bar {
 }
 
 .share-Btns > button:hover {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .modal-content button:hover{

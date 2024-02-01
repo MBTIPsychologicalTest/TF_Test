@@ -15,28 +15,30 @@
                 <span class="millennium">Millennium</span>
                 <span class="dragon">Dragons</span>
             </p>
-            <h1>T/F 테스트 결과</h1>
-            <a href="https://ozcodingschool.com/">
+            <a href="https://ozcodingschool.com/" target="blank">
                 <img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F00feaf78-d356-41ee-90f9-616e7f73fd77%2Ffcd0ea25-917c-400c-9443-839fd0de2a2f%2Foz_icon_(2).png?table=block&id=f5504ba9-b741-4d2e-9af6-ded3fb094d5a&spaceId=00feaf78-d356-41ee-90f9-616e7f73fd77&width=250&userId=097f1c2c-691c-41b5-a12c-237bdfda8a3b&cache=v2"
                     id="oz-logo">
             </a>
         </div>
         <div class="result-display">
-            <p id="nickname" style="font-size: 30px;"></p>
+            <div class="result-image">
+                <img src="./images/test.jpg" alt="결과 캐릭터 이미지" id="resultImg">
+            </div>
             <div class="TFpercentage">
                 <div>
                     <span id="F-word">F</span>
                     <progress max="100" value="0" class="progress-bar" id="F-progressBar"></progress>
-                    <span id="F-score"></span>
+                    <span class="score" id="F-score"></span>
                 </div>
                 <div>
                     <span id="T-word">T</span>
                     <progress max="100" value="0" class="progress-bar" id="T-progressBar"></progress>
-                    <span id="T-score"></span>
+                    <span class="score" id="T-score"></span>
                 </div>
             </div>
-            <div class="result-image">
-                <img src="./images/test.jpg" alt="결과 캐릭터 이미지">
+        </div>
+        <div class="content-display">
+            <div id="content-explanation">
             </div>
         </div>
         <div class="Btns">
@@ -46,7 +48,7 @@
                     <div class="modal-content">
                         <button id="close-modal">X</button>
                         <div class="share-Btns">
-                            <button id="kakao-shareBtn">카카오톡 공유하기</button>
+                            <button id="kakao-shareBtn" onclick="sendKakaoLink()">카카오톡 공유하기</button>
                             <button id="link-copyBtn">링크 복사하기</button>
                         </div>
                     </div>
@@ -58,11 +60,15 @@
         </div>
         <div class="ps">
             <div>본 페이지는 <b>오즈 코딩스쿨 웹 개발 초격차 캠프 프론트 2기</b><br>
-                 <span class="millennium">Millennium</span> 
-                 <span class="dragon">Dragons</span>
-                 팀이 개발했습니다.</div>
+                <span class="millennium">Millennium</span>
+                <span class="dragon">Dragons</span>
+                팀이 개발했습니다.
+            </div>
         </div>
     </div>
+
+    
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script src="resultPage.js"></script>
 </body>
 
