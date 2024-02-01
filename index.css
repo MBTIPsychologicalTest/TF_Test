@@ -5,27 +5,30 @@
     display: flex;
     align-items: center;
 }
-
 body{    
-height: 100vh;
+    height: 100vh;
     margin: 0;
     justify-content: center;
     text-align: center;
+    align-items: center;
+    display: flex;
 }
 #container{
 /* 변경: 화면 너비에 따라 조절 */
-    max-width: 600px; /* 변경: 최대 폭 설정 */
-    height: 100%;
-    display: grid;
-    /*flex-direction: column;*/
-    margin: 0 auto;
+    width: 100%;
+    max-width: 700px; /* 변경: 최대 폭 설정 */
+
+    flex-direction: column;
+    margin: auto;
     text-align: center;
     padding: 0; /* 변경: 좀 더 작은 여백 */
 
 }
 
 header{
+    width: 100%;
     border-bottom: 1px solid rgb(218, 218, 218);
+
 }
 .logo{
     justify-content: space-between;
@@ -47,9 +50,11 @@ header{
     text-decoration-line: none;
     color: black;
     font-weight: 700;
+    height: 2rem;
+    width: 2rem;
 }
 #mainImg{
-    width: 90%;
+    width: 100%;
     padding: 30px 0 10px 0;
 }
 .text{
@@ -59,11 +64,10 @@ header{
 }
 .testBtnBox{
     flex-direction: column;
-    height: 150px;
 }
 .testBtn{
     width: 90%;
-    height: 40%;
+    height: 64px;
     border-radius: 15px;
     margin: 6px 0;
     font-size: 20px;
