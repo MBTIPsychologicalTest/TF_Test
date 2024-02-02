@@ -7,19 +7,16 @@
 }
 html{
     height: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
 }
 body{    
+    width: 100%;
+    height: 100%;
     margin: auto 0;
     justify-content: center;
     text-align: center;
     align-items: center;
     display: flex;
 }
-/* css */
-
 #container{
 /* 변경: 화면 너비에 따라 조절 */
     width: 100%;
@@ -28,6 +25,8 @@ body{
     margin: auto;
     text-align: center;
     padding: 0; /* 변경: 좀 더 작은 여백 */
+    justify-content: center;
+    display: flex;
 }
 header{
     width: 100%;
