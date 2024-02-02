@@ -91,7 +91,7 @@ closeBtn.addEventListener("click", () => {
 });
 
 retryBtn.addEventListener("click", () => {
-  window.location.href = "startPage.html";
+  window.location.href = "index.html";
 });
 
 // Kakao 초기화
