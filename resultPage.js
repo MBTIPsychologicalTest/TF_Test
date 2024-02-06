@@ -105,9 +105,9 @@ function sendKakaoLink() {
   Kakao.Link.sendDefault({
     objectType: "feed",
     content: {
-      title: "T/F 테스트 결과",
-      description: "카카오톡으로 메시지를 공유합니다.",
-      imageUrl: "이미지 URL",
+      title: "MBTI T/F 심리테스트",
+      description: "MBTI T/F 심리테스트 결과",
+      imageUrl: `${resultImg.src}`,
       link: {
         mobileWebUrl:
           "https://mbti-tftest-millenniumdragons.netlify.app/resultpage?value=" +
@@ -119,7 +119,7 @@ function sendKakaoLink() {
     },
     buttons: [
       {
-        title: "웹으로 이동",
+        title: "자세히 보기",
         link: {
           mobileWebUrl:
             "https://mbti-tftest-millenniumdragons.netlify.app/resultpage?value=" +
