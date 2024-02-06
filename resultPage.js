@@ -110,10 +110,10 @@ function sendKakaoLink() {
       imageUrl: "이미지 URL",
       link: {
         mobileWebUrl:
-          "https://6256-59-30-170-233.ngrok-free.app/resultPage.html?value=" +
+          "https://mbti-tftest-millenniumdragons.netlify.app/resultpage?value=" +
           fScoreValue,
         webUrl:
-          "https://6256-59-30-170-233.ngrok-free.app/resultPage.html?value=" +
+          "https://mbti-tftest-millenniumdragons.netlify.app/resultpage?value=" +
           fScoreValue,
       },
     },
@@ -122,10 +122,10 @@ function sendKakaoLink() {
         title: "웹으로 이동",
         link: {
           mobileWebUrl:
-            "https://6256-59-30-170-233.ngrok-free.app/resultPage.html?value=" +
+            "https://mbti-tftest-millenniumdragons.netlify.app/resultpage?value=" +
             fScoreValue,
           webUrl:
-            "https://6256-59-30-170-233.ngrok-free.app/resultPage.html?value=" +
+            "https://mbti-tftest-millenniumdragons.netlify.app/resultpage?value=" +
             fScoreValue,
         },
       },
