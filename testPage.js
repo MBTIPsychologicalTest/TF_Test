@@ -214,12 +214,12 @@ function goPage7() {
     "이 식당 너무 와보고 싶었는데 웨이팅이 두시간이래ㅠㅠ 어떡하지?";
   typeFButton.innerText = "(와보고 싶었다고?) 괜찮아 기다리자!";
   typeBothButton.innerText =
-    "두시간이나 기다려야된다고? 배고픈데.. 여긴 어때?(다른 곳을 보여줌)";
+    "두시간이나 기다려야 된다고? 배고픈데.. 여긴 어때?(다른 곳을 보여줌)";
   typeTButton.innerText = "(시간아까워) 다른데 가자";
 }
 function goPage8() {
   const question = document.getElementById("question");
-  question.innerText = "영화를 보는 중 슬픈장면이 나왔울 때 당신의 반응은?";
+  question.innerText = "영화를 보는 중 슬픈장면이 나왔을 때 당신의 반응은?";
   typeFButton.innerText = "주인공 빙의됨. (눈물 왕왕 흘리는 중)";
   typeBothButton.innerText = "슬프긴하지만 눈물을 흘리진 않는다.";
   typeTButton.innerText =
@@ -241,33 +241,33 @@ function goPage10() {
     "로봇 너무 불쌍해 ㅜㅜ 왜 다시 무너뜨리라고 지시하지 인간 나쁘다";
   typeBothButton.innerText = "안쓰럽긴한데 로봇은 지시받은대로 행동해야지.";
   typeTButton.innerText = "로봇 주제에 시키는대로 행동해야지 토를달아?";
-  question.style.fontSize = '14px';
+  question.style.fontSize = "14px";
 }
 
 // 다음 페이지 프로그레스바 진행상황과 현재 문항 수 바뀌도록하는 함수
-function changeProgressBar(questionIndex){
-  const questionCount = document.getElementById('questionCount');
+function changeProgressBar(questionIndex) {
+  const questionCount = document.getElementById("questionCount");
   questionCount.innerHTML = `${questionIndex} / 10`; // 현재 문항 수 표시
-  const progressText = document.getElementById('progressText');
+  const progressText = document.getElementById("progressText");
 
   let currentText = parseInt(progressText.innerText);
   let currentValue = parseInt(progressBar.value);
-  
+
   newValue = currentValue += 10;
   newText = currentText + 10;
-  
+
   progressBar.value = newValue;
-  progressText.innerText = newText + '%';
+  progressText.innerText = newText + "%";
 
   if (currentValue <= 30) {
-      progressBar.classList.remove('orange-color', 'green-color');
-      progressBar.classList.add('red-color');
+    progressBar.classList.remove("orange-color", "green-color");
+    progressBar.classList.add("red-color");
   } else if (currentValue <= 70) {
-      progressBar.classList.remove('red-color', 'green-color');
-      progressBar.classList.add('orange-color');
+    progressBar.classList.remove("red-color", "green-color");
+    progressBar.classList.add("orange-color");
   } else {
-      progressBar.classList.remove('red-color', 'orange-color');
-      progressBar.classList.add('green-color');
+    progressBar.classList.remove("red-color", "orange-color");
+    progressBar.classList.add("green-color");
   }
 }
 
