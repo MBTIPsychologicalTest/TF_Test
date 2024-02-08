@@ -32,35 +32,35 @@ function get_Result() {
 
   if (fScoreValue <= 20) {
     //"너 T발 C야?"
-    resultImg.src = "./images/T_img.jpeg";
+    resultImg.src = "../images/T_img.jpeg";
     content_explanation.innerHTML = `"넌 정말 T야!" 라는 소리를 자주 듣는 당신!<br>
     해결 방법을 제시한 건데 상처받았다고 하면 이해가 안 돼요<br>
     하지만 T라고 아예 공감을 못하는 게 아닙니다<br>
     <b>단지 표현 방식이 다를 뿐!<b>`;
   } else if ((fScoreValue > 20) & (fScoreValue <= 40)) {
     //"겉.바.속.촉"'
-    resultImg.src = "./images/겉바속촉.jpeg";
+    resultImg.src = "../images/겉바속촉.jpeg";
     content_explanation.innerHTML = `겉은 바삭바삭 까칠해 보이지만 속은 촉촉한 당신!<br>
     평소 T 적인 모먼트가 자주 있지만<br>
     무심한 듯 챙겨주는 따듯함이 보여요<br>
     그야말로 <b>츤데레의 정석<b>!`;
   } else if ((fScoreValue > 40) & (fScoreValue <= 60)) {
     //"후라이드반 양념반"
-    resultImg.src = "./images/반반치킨.jpeg";
+    resultImg.src = "../images/반반치킨.jpeg";
     content_explanation.innerHTML = `F들 사이에서 T, T들 사이에서 F를 맡고 있는 당신!<br>
     "너가 F(또는 T)라고?!" 라는 말을 자주 들어요<br>
     양쪽의 마음이 모두 공감 가능한 당신은<br>
     F와 T를 모두 만족시킬 수 있는 <b>반반 치킨<b> 같은 매력을 가졌군요!`;
   } else if ((fScoreValue > 60) & (fScoreValue <= 80)) {
     //"물복인척하는 딱복"
-    resultImg.src = "./images/물복인척하는 딱복.jpg";
+    resultImg.src = "../images/물복인척하는 딱복.jpg";
     content_explanation.innerHTML = `겉은 말랑말랑해서 물복인줄알았지만 사실은 딱복인 당신!<br>
     말랑말랑한 면으로 사람들을 대하지만 <br>
     가끔은 단단한 면모로 놀래키기도 해요.<br>
     따뜻한 공감에 더불어 현실적인 조언도 해줄 수 있는 당신은<br> <b>만능해결사!<b>`;
   } else {
     //"공감 대마왕"
-    resultImg.src = "./images/F_img.jpg";
+    resultImg.src = "../images/F_img.jpg";
     content_explanation.innerHTML = `감성 충만 공감 능력 짱짱인 당신!<br>
     영화 속 슬픈장면에서는 주인공에 빙의해서 눈물을 왕왕 흘려요<br>
     사소한 것에도 감동을 잘 받고 새벽 감성을 잘 타요<br>
