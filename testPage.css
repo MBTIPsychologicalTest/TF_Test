@@ -96,7 +96,6 @@ div#container {
     display: block;
     margin: auto;
     text-align: center;
-    padding: 0 10px; /* 변경: 좀 더 작은 여백 */
 }
 
 p#questionCount {
@@ -109,7 +108,6 @@ div#question-container {
     border: 1px solid black;
     border-radius: 20px;
     padding: 18px 30px;
-
 }
 
 p#question {
@@ -124,16 +122,21 @@ p#question {
     word-break: keep-all;
 }
 
+div#select-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
 button{
     width: 100%;
-    margin-bottom: 20px;
     font-size: 17px;
     height: 100%; 
     border-radius: 15px; 
-    padding: 20px;
     background-color: rgb(233, 244, 253);
     word-break: keep-all;
     cursor: pointer;
+    padding: 1.3rem;
 }
 
 button:hover{
