@@ -10,7 +10,6 @@ let questionIndex = 1; // 몇번 문항인지
 // 다음 문항으로 이동하면서 해야할 작업함수
 function goNextPage(buttonId) {
   getScore(buttonId); // 각 버튼에 해당하는 F점수 증가
-  console.log(f_Score);
   changeQuestion(); // 다음 문항으로 이동
   changeProgressBar(questionIndex); // 프로그레스바 진행상황 변경
 }
