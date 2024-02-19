@@ -41,3 +41,7 @@ function displayResult(){
     //window.localStorage.clear();
   })
 }
+
+function goBack() {
+  window.history.go(-2);
+}
