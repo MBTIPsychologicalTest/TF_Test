@@ -140,7 +140,7 @@ progress::-webkit-progress-bar {
 }
 
 .Btns{
-    height: 10rem;
+    height: 15rem;
     width: 100%;
     display: flex;
     flex-direction: column;
