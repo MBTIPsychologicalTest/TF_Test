@@ -20,8 +20,41 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
 // 'f_Score'에 해당하는 값을 가져오기
-const fScoreValue = urlParams.get("value");
+const fScoreValue = urlParams.get("value") ?? 0;
 const tScoreValue = 100 - fScoreValue;
+
+//추가한 코드
+let historyArr = [];
+const date = new Date();
+const year = date.getFullYear();
+const month = ('0' + (date.getMonth() + 1)).slice(-2);
+const day = ('0' + date.getDate()).slice(-2);
+const hours = ('0' + date.getHours()).slice(-2); 
+const minutes = ('0' + date.getMinutes()).slice(-2);
+const seconds = ('0' + date.getSeconds()).slice(-2); 
+const today = year + '년 ' + month  + '월 ' + day + '일 ' + hours + '시 ' + minutes  + '분 ' + seconds + '초';
+//로컬스토리지에 추가하기
+function saveHistory(){
+  const tfResultString = JSON.stringify(historyArr)
+  localStorage.setItem("history", tfResultString)
+}
+//기록 배열에 추가
+function addHistory(){
+  let history = localStorage.getItem("history")
+  console.log(history)
+  if(history !== null){
+    historyArr = JSON.parse(history)
+  }
+  let tfAdded = {
+    historyId: today,
+    fresultHistory: fScoreValue,
+    tresultHistory: tScoreValue
+  }
+  historyArr.push(tfAdded)
+  saveHistory()
+}
+addHistory()
+//여기까지 추가한 코드
 
 function get_Result() {
   f_Progress.value = fScoreValue;
