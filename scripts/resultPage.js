@@ -41,7 +41,6 @@ function saveHistory(){
 //기록 배열에 추가
 function addHistory(){
   let history = localStorage.getItem("history")
-  console.log(history)
   if(history !== null){
     historyArr = JSON.parse(history)
   }
