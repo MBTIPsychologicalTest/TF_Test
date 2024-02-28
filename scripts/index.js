@@ -21,9 +21,3 @@ Kakao.Share.createDefaultButton({
     }
 });
 Kakao.Share.createDefaultButton();
-
-/*클립보드 api*/
-let clipboard = new Clipboard('.shareBtn');
-clipboard.on('success', function (e) {
-swal("복사되었습니다!","", "success")
-});   

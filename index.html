@@ -40,7 +40,8 @@
             </div>
         </main>
     </div>
-
+    
+    <script src="./scripts/index.js"></script>
     <!--카카오톡 공유하기-->
     <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.6.0/kakao.min.js"></script>
 
@@ -51,7 +52,12 @@
     <!--링크 복사 clipboard api 사용 (명령어: npm install clipboard --save)--> 
     <!--참고: https://github.com/zenorocha/clipboard.js/-->
     <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+    <script>
+        let clipboard = new Clipboard('.shareBtn');
+        clipboard.on('success', function (e) {
+        swal("복사되었습니다!","", "success")
+        });  
+    </script>
 
-    <script src="./scripts/index.js"></script>
 </body>
 </html>
